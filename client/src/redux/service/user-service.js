@@ -48,7 +48,12 @@ endpoints: (build) => ({
         }),
         invalidatesTags: ['User']
     }),
+    getUserById: build.query({
+        query: (id) => ({
+            url: `/todos/${id}`,
+        }),
+    })
 })
 })
 
-export const { useGetUsersQuery, useCreateUserMutation, useDeleteUserMutation, useEditUserMutation } = userService;
+export const { useGetUsersQuery, useCreateUserMutation, useDeleteUserMutation, useEditUserMutation, useGetUserByIdQuery} = userService;

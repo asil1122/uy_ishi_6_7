@@ -17,7 +17,13 @@
       "id": 4
     }
   ],
-  "todos": [],
+  "todos": [
+    {
+      "title": "dada",
+      "description": "adada",
+      "id": 1
+    }
+  ],
   "photos": [
     {
       "id": 1,
